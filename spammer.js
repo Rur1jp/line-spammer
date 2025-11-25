@@ -8,6 +8,10 @@ const msg = "Raid By Rulu\nx.com/Rur1_jp\nx.com/nyaurz"
 //宣伝文
 const cnt = 1145141919810
 //送信数
+const pass = ""
+const mail = ""
+//メアドとパスワード
+
 
 import { nanoid } from "nanoid";
 import
@@ -17,8 +21,8 @@ import
 import { FileStorage } from "@evex/linejs/storage";
 
 const client = await loginWithPassword({
-    password: "",
-    email: "",
+    password: pass,
+    email: mail,
     onPincodeRequest(pin) {
         console.log(pin);
     },
